@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feruzbek Bobokulov <about-me></about-me></title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6ea8ff, #e9eef5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: #fff;
+            width: 450px;
+            height: auto;
+            border-radius: 22px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            padding: 35px;
+            animation: fadeIn 1.2s;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #5d8bfd;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            margin: 8px 0;
+            font-size: 32px;
+            color: #222;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .btns {
+            margin-top: 22px;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 12px 20px;
+            background: #5d8bfd;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.06);
+            background: #2e62ff;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(25px);}
+            to   {opacity: 1; transform: translateY(0);}
+        }
+
+        @media (max-width: 470px) {
+            .card {
+                width: 90%;
+            }
+            .profile-img {
+                width: 130px;
+                height: 130px;
+            }
+        }
+
+        /* ✅ Qo'shilgan: rasmlar uchun galereya */
+        .gallery-title, .video-title {
+            margin-top: 25px;
+            font-size: 22px;
+            color: #222;
+            font-weight: bold;
+        }
+
+        .gallery {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #5d8bfd;
+        }
+
+        .video-block {
+            margin-top: 10px;
+        }
+
+        .video-block video {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="./photo_2025-11-08_13-55-02.jpg" alt="Mening rasmi" class="profile-img">
+        <h1>👋 Salam! Men — Feruzbek Bobokulov</h1>
+        <p>
+            Веб-дизайнер и Frontend разработчик
+            ...
+        </p>
+
+        <div class="btns">
+            <a href="https://www.instagram.com/bobokulov__07_/#" class="btn" target="_blank">Instagram</a>
+            <a href="https://www.telegram.com/bobokulov_07" class="btn" target="_blank">Telegram</a>
+        </div>
+
+        <!-- ✅ Yangi qo'shildi: Rasmlar qismi -->
+        <div class="gallery-title">📷 Rasmlar</div>
+        <div class="gallery">
+            <img src="./photo_2025-10-25_21-54-20.jpg" alt="">
+            <img src="./photo_2025-10-25_22-00-18.jpg" alt="">
+            <img src="./photo_2025-10-25_22-04-28.jpg" alt="">
+            <img src="./photo_2025-10-25_22-04-52.jpg" alt="">
+            <img src="./photo_2025-11-08_13-55-02.jpg" alt="">
+            </div>
+
+        <!-- ✅ Yangi qo'shildi: Video qismi -->
+        <div class="video-title">🎬 Video</div>
+        <div class="video-block">
+            <video width="300px"  height="300px" controls>
+                <source src="./video_2025-11-08_13-58-14.mp4" type="video/mp4">
+                Video qo'llab-quvvatlanmaydi.
+            </video>
+        </div>
+
+    </div>
+
+</body>
+</html>
